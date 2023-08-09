@@ -1,0 +1,247 @@
+* {
+  font-size: 18px;
+  margin: 0; 
+}
+
+p {
+  display: inline-block;
+}
+
+body {
+  font-family: Hanken Grotesk;
+  background-color: hsla(221, 100%, 96%, 0.7);
+  box-sizing: border-box;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25rem;
+  height: 17rem;
+  padding: 0.8rem 0.8rem 0.8rem 0;
+  border-radius: 1rem;
+  background-color: white;
+  box-shadow: 0.3px 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+.result {
+  width: 280px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 2rem;
+  border-radius: 1rem;
+  background-image: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.result__title {
+  font-weight: 500;
+  color: hsl(221, 100%, 94%);
+}
+
+.result__number {
+  height: 4rem;
+  width: 4rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-weight: 800;
+  font-size: 48px;
+  padding: 2rem;
+  color: hsl(0, 0%, 100%);
+  border-radius: 16rem;
+  background-image: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+.result__total {
+  font-weight: 500;
+  color: hsla(241, 100%, 89%, 0.6);
+  font-size: 12px;
+}
+
+.result__subtitle {
+  font-weight: 700;
+  color: hsl(0, 0%, 100%);
+  font-size: larger
+}
+
+.result__description {
+  font-weight: 500;
+  color: hsl(221, 100%, 94%);
+  font-size: 12px;
+  text-align: center;
+  max-width: 160px;
+}
+
+.summary {
+  width: 260px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem;
+  gap: 0.8rem;
+}
+
+.summary__title {
+  align-self: flex-start;
+}
+
+.summary__elements {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  gap: 0.8rem;
+}
+
+.summary__reaction,
+.summary__memory,
+.summary__verbal,
+.summary__visual {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 0.6rem;
+  padding: 0.6rem 0.4rem;
+}
+
+.summary__reaction {
+  background-color: hsla(0, 100%, 67%, 0.1);
+  color: hsl(0, 100%, 67%);
+}
+
+.summary__memory {
+  background-color: hsla(39, 100%, 56%, 0.1);
+  color: hsl(39, 100%, 56%);
+}
+
+.summary__verbal {
+  background-color: hsla(166, 100%, 37%, 0.1);
+  color: hsl(166, 100%, 37%);
+}
+
+.summary__visual {
+  background-color: hsla(234, 85%, 45%, 0.1);
+  color: hsl(234, 85%, 45%);
+}
+
+.summary__subtitle {
+  display: flex;
+  align-items: center;
+}
+
+.summary__number {
+  color: black;
+  font-weight: 700; 
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.summary__total {
+  color: gray;
+  font-weight: 500;
+}
+
+.summary__button {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(224, 30%, 27%);
+  padding: 0.6rem 4rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  font-size: 12px;
+}
+
+.summary__button:hover {
+  background-image: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 1rem;
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%);
+  font-size: 11px;
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    height: auto;
+    width: 90%;
+    padding: 2rem;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    border-radius: 0 0 2rem 2rem;
+  }
+
+  .result {
+    width: 100%;
+    height: 100%;
+    padding: 2rem;
+    gap: 1rem;
+    border-radius: 0 0 2rem 2rem;
+  }
+
+  .summary {
+    width: 100%;
+    height: 100%;
+    gap: 1rem;
+    align-items: center;
+  }
+
+  .summary__elements {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+  .summary__reaction,
+  .summary__memory,
+  .summary__verbal,
+  .summary__visual {
+    display: flex;
+    justify-content: space-around;
+    border-radius: 0.6rem;
+    padding: 0.6rem 0;
+    width: 100%;
+  }
+
+  .summary__button {
+    width: 100%;
+    padding: 1rem 4rem;
+    font-size: 18px;
+  }
+
+  .attribution {
+    justify-content: center;
+  }
+}

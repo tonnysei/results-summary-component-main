@@ -1,3 +1,27 @@
+:root {
+/* Primary */
+
+--Light-red: hsl(0, 100%, 67%);
+--Orangey-yellow: hsl(39, 100%, 56%);
+--Green-teal: hsl(166, 100%, 37%);
+--Cobalt-blue: hsl(234, 85%, 45%);
+
+/* Gradients */
+
+--Light-slate-blue: hsl(252, 100%, 67%);
+--Light-royal-blue: hsl(241, 81%, 54%);
+
+--Violet-blue: hsla(256, 72%, 46%, 1);
+--Persian-blue: hsla(241, 72%, 46%, 0);
+
+/* Neutral */
+
+--White: hsl(0, 0%, 100%);
+--Pale-blue: hsl(221, 100%, 96%);
+--Light-lavender: hsl(241, 100%, 89%);
+--Dark-gray-blue: hsl(224, 30%, 27%);
+}
+
 * {
   font-size: 18px;
   margin: 0; 
@@ -9,7 +33,7 @@ p {
 
 body {
   font-family: Hanken Grotesk;
-  background-color: hsla(221, 100%, 96%, 0.7);
+  background-color: var(--Pale-blue);
   box-sizing: border-box;
 }
 
@@ -46,12 +70,12 @@ section {
   justify-content: space-between;
   padding: 0.8rem 2rem;
   border-radius: 1rem;
-  background-image: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-image: linear-gradient(180deg, var(--Light-slate-blue), var(--Light-royal-blue));
 }
 
 .result__title {
   font-weight: 500;
-  color: hsl(221, 100%, 94%);
+  color: var(--Pale-blue);
 }
 
 .result__number {
@@ -63,9 +87,9 @@ section {
   font-weight: 800;
   font-size: 48px;
   padding: 2rem;
-  color: hsl(0, 0%, 100%);
+  color: var(--White);
   border-radius: 16rem;
-  background-image: linear-gradient(180deg, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  background-image: linear-gradient(180deg, var(--Violet-blue), var(--Persian-blue));
 }
 
 .result__total {
@@ -76,13 +100,13 @@ section {
 
 .result__subtitle {
   font-weight: 700;
-  color: hsl(0, 0%, 100%);
+  color: var(--White);
   font-size: larger
 }
 
 .result__description {
   font-weight: 500;
-  color: hsl(221, 100%, 94%);
+  color: var(--Pale-blue);
   font-size: 12px;
   text-align: center;
   max-width: 160px;
@@ -123,22 +147,22 @@ section {
 
 .summary__reaction {
   background-color: hsla(0, 100%, 67%, 0.1);
-  color: hsl(0, 100%, 67%);
+  color: var(--Light-red);
 }
 
 .summary__memory {
   background-color: hsla(39, 100%, 56%, 0.1);
-  color: hsl(39, 100%, 56%);
+  color: var(--Orangey-yellow);
 }
 
 .summary__verbal {
   background-color: hsla(166, 100%, 37%, 0.1);
-  color: hsl(166, 100%, 37%);
+  color: var(--Green-teal);
 }
 
 .summary__visual {
   background-color: hsla(234, 85%, 45%, 0.1);
-  color: hsl(234, 85%, 45%);
+  color: var(--Cobalt-blue);
 }
 
 .summary__subtitle {
@@ -160,8 +184,8 @@ section {
 }
 
 .summary__button {
-  color: hsl(0, 0%, 100%);
-  background-color: hsl(224, 30%, 27%);
+  color: var(--White);
+  background-color: var(--Dark-gray-blue);
   padding: 0.6rem 4rem;
   border-radius: 2rem;
   border: none;
@@ -171,7 +195,7 @@ section {
 }
 
 .summary__button:hover {
-  background-image: linear-gradient(180deg, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  background-image: linear-gradient(180deg, var(--Light-slate-blue), var(--Light-royal-blue));
 }
 
 .attribution {
